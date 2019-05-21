@@ -1,0 +1,16 @@
+{
+  "name": "proxy-test",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "forever start -l forever.log -e proxy-error.log -o proxy-output.log -a test-proxy.js",
+    "restart": "forever restart test-proxy.js",
+    "stop": "forever stop test-proxy.js",
+    "dev": "npx nodemon server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "~4.16.1",
+    "request-ip": "^2.1.3"
+  }
+}
