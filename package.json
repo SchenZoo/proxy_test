@@ -3,9 +3,9 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "forever start -l forever.log -e proxy-error.log -o proxy-output.log -a test-proxy.js",
-    "restart": "forever restart test-proxy.js",
-    "stop": "forever stop test-proxy.js",
+    "start": "forever start -l forever.log -e proxy-error.log -o proxy-output.log -a server.js",
+    "restart": "forever restart server.js",
+    "stop": "forever stop server.js",
     "dev": "npx nodemon server.js"
   },
   "dependencies": {
